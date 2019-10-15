@@ -35,7 +35,6 @@ test:
     - autoRIFT
     - autoRIFT.autoRIFT
     - autoRIFT.autoriftcore
-    - geogrid
     - geogrid.GeogridOptical
 
 about:
