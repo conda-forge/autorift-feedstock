@@ -1,5 +1,5 @@
-{% set name = "autorift" %}
-{% set version = "1.0" %}
+{% set name = "autoRIFT" %}
+{% set version = "1.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/leiyangleon/autoRIFT/archive/v{{ version }}.tar.gz
-  sha256: de5656fd5c9476635cc8d26ff0a323da2c8ed92ec2d92b529504f89bafde91fd
+  sha256: 569e9503f0c9060b922a1d4fd509ad2eaaf02c5d275f1f945794efaf792dbf89
 
 build:
   number: 0
@@ -35,8 +35,7 @@ test:
     - autoRIFT
     - autoRIFT.autoRIFT
     - autoRIFT.autoriftcore
-  commands:
-    - GeogridOptical.py -h
+    - geogrid.GeogridOptical
 
 about:
   home: https://github.com/leiyangleon/autoRIFT
@@ -51,3 +50,4 @@ extra:
   recipe-maintainers:
     - leiyangleon
     - piyushrpt
+    - alex-s-gardner
