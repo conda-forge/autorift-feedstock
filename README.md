@@ -1,4 +1,4 @@
-About autoRIFT
+About autorift
 ==============
 
 Home: https://github.com/leiyangleon/autoRIFT
@@ -29,31 +29,31 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_python3.6</td>
+              <td>linux_python3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8082&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/autorift-feedstock?branchName=master&jobName=linux&configuration=linux_python3.6" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/autorift-feedstock?branchName=master&jobName=linux&configuration=linux_python3.6.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_python3.7</td>
+              <td>linux_python3.7.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8082&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/autorift-feedstock?branchName=master&jobName=linux&configuration=linux_python3.7" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/autorift-feedstock?branchName=master&jobName=linux&configuration=linux_python3.7.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_python3.6</td>
+              <td>osx_python3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8082&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/autorift-feedstock?branchName=master&jobName=osx&configuration=osx_python3.6" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/autorift-feedstock?branchName=master&jobName=osx&configuration=osx_python3.6.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_python3.7</td>
+              <td>osx_python3.7.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8082&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/autorift-feedstock?branchName=master&jobName=osx&configuration=osx_python3.7" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/autorift-feedstock?branchName=master&jobName=osx&configuration=osx_python3.7.____cpython" alt="variant">
                 </a>
               </td>
             </tr>
@@ -81,27 +81,27 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-autoRIFT-green.svg)](https://anaconda.org/conda-forge/autoRIFT) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/autoRIFT.svg)](https://anaconda.org/conda-forge/autoRIFT) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/autoRIFT.svg)](https://anaconda.org/conda-forge/autoRIFT) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/autoRIFT.svg)](https://anaconda.org/conda-forge/autoRIFT) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-autorift-green.svg)](https://anaconda.org/conda-forge/autorift) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/autorift.svg)](https://anaconda.org/conda-forge/autorift) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/autorift.svg)](https://anaconda.org/conda-forge/autorift) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/autorift.svg)](https://anaconda.org/conda-forge/autorift) |
 
-Installing autoRIFT
+Installing autorift
 ===================
 
-Installing `autoRIFT` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `autorift` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 ```
 
-Once the `conda-forge` channel has been enabled, `autoRIFT` can be installed with:
+Once the `conda-forge` channel has been enabled, `autorift` can be installed with:
 
 ```
-conda install autoRIFT
+conda install autorift
 ```
 
-It is possible to list all of the versions of `autoRIFT` available on your platform with:
+It is possible to list all of the versions of `autorift` available on your platform with:
 
 ```
-conda search autoRIFT --channel conda-forge
+conda search autorift --channel conda-forge
 ```
 
 
@@ -119,7 +119,7 @@ A feedstock is made up of a conda recipe (the instructions on what and how to bu
 the package) and the necessary configurations for automatic building using freely
 available continuous integration services. Thanks to the awesome service provided by
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/)
-and [TravisCI](https://travis-ci.org/) it is possible to build and upload installable
+and [TravisCI](https://travis-ci.com/) it is possible to build and upload installable
 packages to the [conda-forge](https://anaconda.org/conda-forge)
 [Anaconda-Cloud](https://anaconda.org/) channel for Linux, Windows and OSX respectively.
 
@@ -146,7 +146,7 @@ Terminology
 Updating autorift-feedstock
 ===========================
 
-If you would like to improve the autoRIFT recipe or build a new
+If you would like to improve the autorift recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
@@ -168,6 +168,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@alex-s-gardner](https://github.com/alex-s-gardner/)
 * [@leiyangleon](https://github.com/leiyangleon/)
 * [@piyushrpt](https://github.com/piyushrpt/)
-* [@alex-s-gardner](https://github.com/alex-s-gardner/)
+
