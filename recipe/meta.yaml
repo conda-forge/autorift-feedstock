@@ -1,5 +1,5 @@
 {% set name = "autoRIFT" %}
-{% set version = "1.0.4" %}
+{% set version = "1.0.5" %}
 
 
 package:
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://github.com/leiyangleon/autoRIFT/archive/v{{ version }}.tar.gz
-  sha256: f7f66677d04afe0aa0e291b56af239e614869f56c5bf17da2e092b373d684e4b
+  sha256: bfc2c93b07417f9df052fb9ff288ad76ebdc2f25b4e40d6decaa839983d85d3f
 
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [win or py2k]
 
 requirements:
@@ -44,7 +44,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'Fast pixel displacement estimation from remote sensing imagery'
+  summary: Fast pixel displacement estimation from remote sensing imagery
   doc_url: https://github.com/leiyangleon/autoRIFT
   dev_url: https://github.com/leiyangleon/autoRIFT
 
