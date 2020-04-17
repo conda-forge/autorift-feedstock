@@ -2,6 +2,7 @@
 {% set version = "1.0.6" %}
 
 
+
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -11,9 +12,10 @@ source:
   sha256: 0fb07d147c9ea72417aea82ff289d668b5d2c3182b508a7f60b1117f2981502f
 
 
+
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [win or py2k]
 
 requirements:
@@ -44,7 +46,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'Fast pixel displacement estimation from remote sensing imagery'
+  summary: Fast pixel displacement estimation from remote sensing imagery
   doc_url: https://github.com/leiyangleon/autoRIFT
   dev_url: https://github.com/leiyangleon/autoRIFT
 
