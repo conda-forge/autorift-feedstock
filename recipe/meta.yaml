@@ -24,12 +24,12 @@ requirements:
   host:
     - python
     - pip
-    - libopencv >= 3.4
-    - opencv >= 3.4
+    - libopencv >=3.4
+    - opencv >=3.4
   run:
     - python
-    - opencv >= 3.4
-    - libopencv >= 3.4
+    - opencv >=3.4
+    - libopencv >=3.4
     - scipy
     - scikit-image
     - gdal
