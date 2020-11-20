@@ -14,8 +14,8 @@ source:
 
 
 build:
-  number: 0
-  script: {{ PYTHON }} -m pip install . -vv
+  number: 1
+  script: {{ PYTHON }} -m pip install --global-option=build_ext --global-option="-I${PREFIX}/include/opencv4" . -vv
   skip: true  # [win or py2k]
 
 requirements:
@@ -24,12 +24,10 @@ requirements:
   host:
     - python
     - pip
-    - libopencv 3.4
-    - opencv 3.4
+    - opencv
   run:
     - python
-    - opencv 3.4
-    - libopencv 3.4
+    - {{ pin_compatible('opencv') }}
     - scipy
     - scikit-image
     - gdal

@@ -5,11 +5,13 @@ Home: https://github.com/leiyangleon/autoRIFT
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/autorift-feedstock/blob/master/LICENSE.txt)
 
 Summary: Fast pixel displacement estimation from remote sensing imagery
 
+Development: https://github.com/leiyangleon/autoRIFT
 
+Documentation: https://github.com/leiyangleon/autoRIFT
 
 Current build status
 ====================
