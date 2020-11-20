@@ -27,7 +27,7 @@ requirements:
     - opencv
   run:
     - python
-    - opencv
+    - {{ pin_compatible('opencv') }}
     - scipy
     - scikit-image
     - gdal
