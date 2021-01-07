@@ -1,5 +1,5 @@
 {% set name = "autoRIFT" %}
-{% set version = "1.0.8" %}
+{% set version = "1.1.0" %}
 
 
 
@@ -9,12 +9,12 @@ package:
 
 source:
   url: https://github.com/leiyangleon/autoRIFT/archive/v{{ version }}.tar.gz
-  sha256: 517cd8adad97c062a4cac193a30297c70802a03969d669689a6c990ea7805f1c
+  sha256: 49b704dc21f63946dd9ed495dc9e7ac27391a008c020b7849ff3e4550633d1ea
 
 
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install --global-option=build_ext --global-option="-I${PREFIX}/include/opencv4" . -vv
   skip: true  # [win or py2k]
 
