@@ -1,5 +1,5 @@
 {% set name = "autoRIFT" %}
-{% set version = "1.1.0" %}
+{% set version = "1.2.0" %}
 
 
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/leiyangleon/autoRIFT/archive/v{{ version }}.tar.gz
-  sha256: 49b704dc21f63946dd9ed495dc9e7ac27391a008c020b7849ff3e4550633d1ea
+  sha256: 9f14badb16d3f9ff95b9045b8e56a8be17984df6bc6e41bd40ca938e5761ef99
 
 
 
