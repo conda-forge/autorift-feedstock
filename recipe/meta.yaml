@@ -1,5 +1,5 @@
 {% set name = "autoRIFT" %}
-{% set version = "1.0.7" %}
+{% set version = "1.1.0" %}
 
 
 
@@ -9,13 +9,13 @@ package:
 
 source:
   url: https://github.com/leiyangleon/autoRIFT/archive/v{{ version }}.tar.gz
-  sha256: 1e80dcb71ae530c5bfc01d7903dd9433c7cf6edd223519176c75b7788d7240d9
+  sha256: 49b704dc21f63946dd9ed495dc9e7ac27391a008c020b7849ff3e4550633d1ea
 
 
 
 build:
   number: 0
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install --global-option=build_ext --global-option="-I${PREFIX}/include/opencv4" . -vv
   skip: true  # [win or py2k]
 
 requirements:
@@ -24,12 +24,10 @@ requirements:
   host:
     - python
     - pip
-    - libopencv 3.4
-    - opencv 3.4
+    - opencv
   run:
     - python
-    - opencv 3.4
-    - libopencv 3.4
+    - {{ pin_compatible('opencv') }}
     - scipy
     - scikit-image
     - gdal
