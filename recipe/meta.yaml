@@ -25,19 +25,23 @@ requirements:
     - python
     - pip
     - opencv
+    - libgdal
   run:
     - python
     - {{ pin_compatible('opencv') }}
     - scipy
     - scikit-image
     - gdal
+    - libgdal
 
 test:
   imports:
     - autoRIFT
     - autoRIFT.autoRIFT
     - autoRIFT.autoriftcore
+    - geogrid
     - geogrid.GeogridOptical
+    - geogrid.geogridOptical
 
 about:
   home: https://github.com/leiyangleon/autoRIFT
