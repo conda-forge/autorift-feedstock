@@ -8,13 +8,9 @@ cxx_compiler:
 - clangxx
 cxx_compiler_version:
 - '11'
-libgdal:
-- '3.2'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 pin_run_as_build:
-  libgdal:
-    max_pin: x.x
   python:
     min_pin: x.x
     max_pin: x.x
