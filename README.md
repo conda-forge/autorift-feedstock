@@ -1,7 +1,7 @@
 About autorift
 ==============
 
-Home: https://github.com/leiyangleon/autoRIFT
+Home: https://github.com/nasa-jpl/autoRIFT
 
 Package license: Apache-2.0
 
@@ -9,9 +9,9 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/autorift-feedst
 
 Summary: Fast pixel displacement estimation from remote sensing imagery
 
-Development: https://github.com/leiyangleon/autoRIFT
+Development: https://github.com/nasa-jpl/autoRIFT
 
-Documentation: https://github.com/leiyangleon/autoRIFT
+Documentation: https://github.com/nasa-jpl/autoRIFT
 
 Current build status
 ====================
