@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/leiyangleon/autoRIFT/archive/v{{ version }}.tar.gz
-  sha256: 18af94c411249f4d122e56e406313ad1ee21d75b7ea859de8d792a3733230b71
+  sha256: 461e0b6a95b9de542d0dd44b9747d57898a9d8fc54e72812e300b751cdeb10f5
 
 
 
