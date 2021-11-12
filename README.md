@@ -1,7 +1,7 @@
 About autorift
 ==============
 
-Home: https://github.com/nasa-jpl/autoRIFT
+Home: https://github.com/leiyangleon/autoRIFT
 
 Package license: Apache-2.0
 
@@ -9,9 +9,9 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/autorift-feedst
 
 Summary: Fast pixel displacement estimation from remote sensing imagery
 
-Development: https://github.com/nasa-jpl/autoRIFT
+Development: https://github.com/leiyangleon/autoRIFT
 
-Documentation: https://github.com/nasa-jpl/autoRIFT
+Documentation: https://github.com/leiyangleon/autoRIFT
 
 Current build status
 ====================
@@ -31,13 +31,6 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_python3.6.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8082&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/autorift-feedstock?branchName=master&jobName=linux&configuration=linux_64_python3.6.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>linux_64_python3.7.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8082&branchName=master">
@@ -56,13 +49,6 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8082&branchName=master">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/autorift-feedstock?branchName=master&jobName=linux&configuration=linux_64_python3.9.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.6.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8082&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/autorift-feedstock?branchName=master&jobName=osx&configuration=osx_64_python3.6.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -127,7 +113,8 @@ conda search autorift --channel conda-forge
 About conda-forge
 =================
 
-[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
+[![Powered by
+NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](https://numfocus.org)
 
 conda-forge is a community-led conda channel of installable packages.
 In order to provide high-quality builds, the process has been automated into the
@@ -188,6 +175,7 @@ Feedstock Maintainers
 =====================
 
 * [@alex-s-gardner](https://github.com/alex-s-gardner/)
+* [@jhkennedy](https://github.com/jhkennedy/)
 * [@leiyangleon](https://github.com/leiyangleon/)
 * [@piyushrpt](https://github.com/piyushrpt/)
 
