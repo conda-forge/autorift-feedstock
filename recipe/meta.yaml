@@ -14,13 +14,18 @@ source:
 
 
 build:
-  number: 4
+  number: 5
   script: {{ PYTHON }} -m pip install --global-option=build_ext --global-option="-I${PREFIX}/include/opencv4" . -vv
   skip: true  # [win or py2k]
 
 requirements:
   build:
     - {{ compiler('cxx') }}
+    - python                                 # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
+    - opencv                                 # [build_platform != target_platform]
+    - libgdal                                # [build_platform != target_platform]
+
   host:
     - python
     - pip
