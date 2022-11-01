@@ -1,5 +1,5 @@
 {% set name = "autoRIFT" %}
-{% set version = "1.4.0" %}
+{% set version = "1.5.0" %}
 
 
 
@@ -8,13 +8,13 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/leiyangleon/autoRIFT/archive/v{{ version }}.tar.gz
-  sha256: 461e0b6a95b9de542d0dd44b9747d57898a9d8fc54e72812e300b751cdeb10f5
+  url: https://github.com/nasa-jpl/autoRIFT/archive/v{{ version }}.tar.gz
+  sha256: fd5afb84081e907838257a294e1028419bae30e96c8c859b881a182811281b3d
 
 
 
 build:
-  number: 5
+  number: 0
   script: {{ PYTHON }} -m pip install --global-option=build_ext --global-option="-I${PREFIX}/include/opencv4" . -vv
   skip: true  # [win or py2k]
 
@@ -33,7 +33,7 @@ requirements:
     - libgdal
   run:
     - python
-    - {{ pin_compatible('opencv') }}
+    - {{ pin_compatible('opencv', max_pin='x.x') }}
     - scipy
     - scikit-image
     - gdal
@@ -49,13 +49,13 @@ test:
     - geogrid.geogridOptical
 
 about:
-  home: https://github.com/leiyangleon/autoRIFT
+  home: https://github.com/nasa-jpl/autoRIFT
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
   summary: Fast pixel displacement estimation from remote sensing imagery
-  doc_url: https://github.com/leiyangleon/autoRIFT
-  dev_url: https://github.com/leiyangleon/autoRIFT
+  doc_url: https://github.com/nasa-jpl/autoRIFT
+  dev_url: https://github.com/nasa-jpl/autoRIFT
 
 extra:
   recipe-maintainers:
