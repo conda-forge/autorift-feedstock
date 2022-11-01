@@ -33,7 +33,7 @@ requirements:
     - libgdal
   run:
     - python
-    - {{ pin_compatible('opencv') }}
+    - {{ pin_compatible('opencv', max_pin='x.x') }}
     - scipy
     - scikit-image
     - gdal
