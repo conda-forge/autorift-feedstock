@@ -7,14 +7,12 @@ channel_targets:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '13'
+- '14'
 libgdal:
 - '3.5'
 macos_machine:
 - arm64-apple-darwin20.0.0
 pin_run_as_build:
-  libgdal:
-    max_pin: x.x
   python:
     min_pin: x.x
     max_pin: x.x
