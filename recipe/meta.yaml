@@ -8,7 +8,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/leiyangleon/autoRIFT/archive/v{{ version }}.tar.gz
+  url: https://github.com/nasa-jpl/autoRIFT/archive/v{{ version }}.tar.gz
   sha256: fd5afb84081e907838257a294e1028419bae30e96c8c859b881a182811281b3d
 
 
@@ -49,13 +49,13 @@ test:
     - geogrid.geogridOptical
 
 about:
-  home: https://github.com/leiyangleon/autoRIFT
+  home: https://github.com/nasa-jpl/autoRIFT
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
   summary: Fast pixel displacement estimation from remote sensing imagery
-  doc_url: https://github.com/leiyangleon/autoRIFT
-  dev_url: https://github.com/leiyangleon/autoRIFT
+  doc_url: https://github.com/nasa-jpl/autoRIFT
+  dev_url: https://github.com/nasa-jpl/autoRIFT
 
 extra:
   recipe-maintainers:
