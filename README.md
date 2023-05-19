@@ -1,11 +1,11 @@
-About autorift
-==============
+About autorift-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/autorift-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/nasa-jpl/autoRIFT
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/autorift-feedstock/blob/main/LICENSE.txt)
 
 Summary: Fast pixel displacement estimation from remote sensing imagery
 
