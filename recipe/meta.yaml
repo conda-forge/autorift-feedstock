@@ -30,15 +30,18 @@ requirements:
   host:
     - python
     - pip
-    - opencv >=4.6.0
     - libgdal
+    - numpy
+    - opencv >=4.6.0
+    - setuptools
   run:
     - python
+    - gdal
+    - libgdal
+    - {{ pin_compatible('numpy') }}
     - {{ pin_compatible('opencv', max_pin='x.x') }}
     - scipy
     - scikit-image
-    - gdal
-    - libgdal
 
 test:
   imports:
