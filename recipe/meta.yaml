@@ -14,7 +14,7 @@ source:
 
 
 build:
-  number: 6
+  number: 7
   script: {{ PYTHON }} -m pip install --global-option=build_ext --global-option="-I${PREFIX}/include/opencv4" . -vv
   skip: true  # [win or py2k]
 
@@ -38,7 +38,6 @@ requirements:
     - python
     - gdal
     - libgdal
-    - {{ pin_compatible('numpy') }}
     - {{ pin_compatible('opencv', max_pin='x.x') }}
     - scipy
     - scikit-image
