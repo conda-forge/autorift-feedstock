@@ -1,0 +1,44 @@
+diff --git a/geo_autoRIFT/autoRIFT/__init__.py b/geo_autoRIFT/autoRIFT/__init__.py
+index 982466b..3124c10 100755
+--- a/geo_autoRIFT/autoRIFT/__init__.py
++++ b/geo_autoRIFT/autoRIFT/__init__.py
+@@ -13,4 +13,4 @@ except ImportError:
+     # this means ISCE support not available. Don't raise error. Allow standalone use
+     pass
+ 
+-__version__ = '1.5.0'
++__version__ = '1.6.0'
+diff --git a/setup.py b/setup.py
+index ebc2597..13aaea2 100755
+--- a/setup.py
++++ b/setup.py
+@@ -1,7 +1,7 @@
+ #!/usr/bin/env python3
+ import numpy as np
+ import os
+- 
++
+ from distutils.core import setup
+ from distutils.extension import Extension
+ 
+@@ -28,7 +28,7 @@ extensions = [
+      Extension(
+         name="autoRIFT/autoriftcore",
+         sources= ['geo_autoRIFT/autoRIFT/bindings/autoriftcoremodule.cpp'],
+-        include_dirs=[np.get_include()] + 
++        include_dirs=[np.get_include()] +
+                     ['geo_autoRIFT/autoRIFT/include',
+                      os.path.join(path, 'include/opencv4/')],
+         library_dirs = [os.path.join(path, 'lib')],
+@@ -48,9 +48,9 @@ extensions = [
+         language="c++"
+      )
+ ]
+- 
++
+ setup (name = 'geo_autoRIFT',
+-        version = '1.5.0',
++        version = '1.6.0',
+         description = 'This is the autoRIFT python package',
+         package_dir={'autoRIFT': 'geo_autoRIFT/autoRIFT','geogrid': 'geo_autoRIFT/geogrid'},
+         packages=['autoRIFT','geogrid'],
