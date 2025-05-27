@@ -1,8 +1,6 @@
 {% set name = "autoRIFT" %}
 {% set version = "2.0.0" %}
 
-
-
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -10,15 +8,11 @@ package:
 source:
   url: https://github.com/nasa-jpl/autoRIFT/archive/v{{ version }}.tar.gz
   sha256: 79e6be8d50b1e9e5bd36efaf2653fcc635287cf8eeb36ac7ce0b96061c985004
-  patches:
-    - v1.6.0-patches.diff  # correct version numbers
-
-
 
 build:
   number: 0
-  script: {{ PYTHON }} -m pip install --global-option=build_ext --global-option="-I${PREFIX}/include/opencv4" . -vv
-  skip: true  # [win or py2k]
+  script: {{ PYTHON }} -m pip install . -vv
+  skip: true  # [win]
 
 requirements:
   build:
@@ -27,25 +21,38 @@ requirements:
     - python                                 # [build_platform != target_platform]
     - pip                                    # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
-    - libgdal                                # [build_platform != target_platform]
-    - numpy                                  # [build_platform != target_platform]
+    - libgdal >=3                            # [build_platform != target_platform]
+    - numpy >=1.20                           # [build_platform != target_platform]
     - opencv >=4.6.0                         # [build_platform != target_platform]
     - setuptools                             # [build_platform != target_platform]
 
   host:
     - python
     - pip
-    - libgdal
-    - numpy
-    - opencv >=4.6.0                         # [build_platform == target_platform]
     - setuptools
+    - eigen >=3.3
+    - isce3 >=0.14
+    - libgdal >=3
+    - netCDF4
+    - numpy >=1.20
+    - opencv >=4.6.0                         # [build_platform == target_platform]
+    - pandas >=1.4
+    - s1reader >=0.2.2
+    - scikit-image
+    - scipy
+
   run:
     - python
-    - gdal
+    - gdal >=3
+    - isce3 >=0.14
     - libgdal
+    - netCDF4
+    - numpy >=1.20
     - {{ pin_compatible('opencv', max_pin='x.x') }}
-    - scipy
+    - pandas >=1.4
+    - s1reader >=0.2.2
     - scikit-image
+    - scipy
 
 test:
   imports:
