@@ -269,6 +269,3 @@ Feedstock Maintainers
 * [@leiyangleon](https://github.com/leiyangleon/)
 * [@piyushrpt](https://github.com/piyushrpt/)
 
-
-<!-- dummy commit to enable rerendering -->
-
