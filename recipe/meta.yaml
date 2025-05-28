@@ -36,10 +36,6 @@ requirements:
     - netCDF4
     - numpy >=1.20
     - opencv >=4.6.0                         # [build_platform == target_platform]
-    - pandas >=1.4
-    - s1reader >=0.2.2
-    - scikit-image
-    - scipy
 
   run:
     - python
@@ -48,6 +44,7 @@ requirements:
     - libgdal
     - netCDF4
     - numpy >=1.20
+    - numba
     - {{ pin_compatible('opencv', max_pin='x.x') }}
     - pandas >=1.4
     - s1reader >=0.2.2
