@@ -11,7 +11,7 @@ source:
 
 build:
   number: 0
-  script: {{ PYTHON }} -m pip install --global-option=build_ext --global-option="-I${PREFIX}/include/opencv4" . -vv
+  script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [win or py<310]
 
 requirements:
