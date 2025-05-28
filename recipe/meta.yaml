@@ -35,7 +35,7 @@ requirements:
     - libgdal >=3
     - netCDF4
     - numpy >=1.20
-    - opencv >=4.6.0                         # [build_platform == target_platform]
+    - opencv >=4.6.0
 
   run:
     - python
