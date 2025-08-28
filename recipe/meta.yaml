@@ -1,5 +1,5 @@
 {% set name = "autoRIFT" %}
-{% set version = "2.0.0" %}
+{% set version = "2.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/nasa-jpl/autoRIFT/archive/v{{ version }}.tar.gz
-  sha256: 79e6be8d50b1e9e5bd36efaf2653fcc635287cf8eeb36ac7ce0b96061c985004
+  sha256: a00066eec14bd2158ef96399be04928c062c315ffa552766e204701b8feebcae
 
 build:
   number: 0
